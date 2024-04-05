@@ -1,7 +1,7 @@
 let buku = [
-    {"nama": "sherlock", "jumlah":2},
+    {"nama": "sherlock", "jumlah":0},
     {"nama": "lupin", "jumlah":2},
-    {"nama": "aladin", "jumlah":2},
+    {"nama": "aladdin", "jumlah":2},
   ]
 
 document.getElementById("formBuku").addEventListener("submit", function(event) {
@@ -17,5 +17,13 @@ if (isNaN(jumlah) || jumlah <=0) {
     return;
 }
 
+// jika jumlah tidak kosong, melakukan pencarian array
+let bukuDitemukan = buku.find(item => item.nama === bukuDipilih);
+
+// jika buku tidak ditemukan
+if (!bukuDitemukan) {
+    alert("Buku tidak ditemukan.");
+    return;
+}
 
 });
