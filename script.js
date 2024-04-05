@@ -31,4 +31,7 @@ if (jumlah > bukuDitemukan.jumlah) {
     alert("Jumlah buku tidak tersedia.");
     return;
 }
+
+// jika jumlah buku yang diinputkan sama atau kurang dari stock jumlah array
+alert("Silahkan ambil buku Anda.");
 });
