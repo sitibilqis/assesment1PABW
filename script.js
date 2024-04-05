@@ -1,3 +1,9 @@
+let buku = [
+    {"nama": "sherlock", "jumlah":2},
+    {"nama": "lupin", "jumlah":2},
+    {"nama": "aladin", "jumlah":2},
+  ]
+
 document.getElementById(formBuku).addEventListener("submit", function(event) {event.preventDefault});
 
 // untuk mengambil nilai dari jumlah dan select option
